@@ -1,0 +1,30 @@
+.img-wrapper{
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-wrapper-logo{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-wrapper-about{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artikel-desc{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    text-align: justify;
+}
