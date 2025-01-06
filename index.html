@@ -28,13 +28,35 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/second.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posisi di kiri bawah */
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-float .bi-whatsapp {
+    font-size: 30px; /* Ukuran icon */
+    color: white; /* Warna icon */
+}
+
+
+  </style>
 </head>
 
 <body class="index-page">
@@ -65,6 +87,14 @@
     </div>
   </header>
 
+  <div class="whatsapp-float">
+    <a href="https://wa.me/6285956625643" target="_blank" title="Hubungi Kami di WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
+
+
+
   <main class="main">
 
     <!-- Hero Section -->
@@ -73,15 +103,16 @@
       <div class="container">
         <div class="row gy-4 justify-content-center justify-content-lg-between">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
-            <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
+            <h1 data-aos="fade-up">Ngemil Jadi Lebih Mudah!
+              <br>selalu di dekat Anda!</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Solusi ngemil untuk kamu yang sibuk. Pastinya berkualitas, enak, dan murah!</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
               <!-- <a href="#book-a-table" class="btn-get-started">Booka a Table</a> -->
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
-          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="assets/img/kue.png" class="img-fluid animated" alt="">
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" style="border-radius: 5%;">
+            <img src="assets/img/menu/pastel.png" class="img-fluid animated" alt="">
           </div>
         </div>
       </div>
@@ -101,7 +132,7 @@
         <div class="row gy-4">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
             <div class="img-wrapper-logo">
-              <img src="assets/img/logo.png" class="img-fluid mb-4" alt="Logo Ngemil Yuk" style="object-fit: cover; width: 100%; height: 100%;">
+              <img src="assets/img/logo.png" class="img-fluid mb-4" alt="Logo Ngemil Yuk" style="object-fit: cover; width: 80%; height: 80%; border-radius: 5%;">
             </div>
             <div class="book-a-table">
               <a href="https://wa.me/6285956625643" target="_blank">
@@ -139,7 +170,7 @@
     <!-- Artikel Kewirausahaan Section -->
     <article id="kewirausahaan">
       <div class="container">
-        <p style="font-size: 2.5rem; text-align: center;">Pengalaman Kewirausahaan di STT Nurul Fikri</p>
+        <p style="font-size: 1.5rem; text-align: center;"><b>Pengalaman Kewirausahaan di STT Nurul Fikri</b></p>
         <p class="artikel-desc">Dalam mata kuliah Kewirausahaan yang diampu oleh Dosen Wulan Fitriani, S.Kom, kami sebagai mahasiswa belajar banyak mengenai pengembangkan ide bisnis menjadi proyek nyata. "Ngemil Yuk" lahir dari kolaborasi, semangat inovasi, dan bimbingan yang kami terima selama semester 3 di STT Terpadu Nurul Fikri.</p>
         <p class="artikel-desc mt-5">Kami belajar langsung tentang mengenai riset pasar, pemasaran digital seperti di Instagram dan social media lainya, dan pentingnya manajemen keuangan bisnis. Melalui perjalanan singkat ini, kami sebagai mahasiswa telah memahami bahwa kesuksesan bisnis bergantung pada strategi yang tepat dan konsistensi dalam memberikan kualitas terbaik kepada para pelanggan.</p>
         <p class="artikel-desc mt-5">Selain itu, kami juga mendapat wawasan tentang pentingnya membangun jaringan bisnis yang kuat dan menjalin hubungan baik dengan pelanggan. Melalui praktik langsung dalam bisnis kecil kami, kami belajar bahwa menjaga komunikasi yang efektif serta memahami kebutuhan dan keinginan konsumen dapat menciptakan loyalitas dan meningkatkan penjualan secara berkelanjutan.</p>  
@@ -157,43 +188,38 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Why Choose Yummy</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
+              <h3>Why Choose Us?</h3>
+
+
             </div>
           </div><!-- End Why Box -->
 
-          <div class="col-lg-8 d-flex align-items-stretch">
+          <div class="col-lg-9 d-flex align-items-stretch">
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
               <div class="col-xl-4">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <i class="bi bi-cash-stack"></i>
+                  <h4>Harga Bersahabat</h4>
+                  <p>Kami ingin memastikan bahwa semua orang, dari mahasiswa hingga pekerja bisa menikmati camilan tanpa harus khawatir dengan anggaran mereka.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore lore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <i class="bi bi-emoji-smile"></i>
+                  <h4>Rasa yang Enak</h4>
+                  <p>Camilan kami dibuat menggunakan bahan berkualitas untuk menciptakan rasa yang lezat. Menghadirkan pengalaman ngemil yang memuaskan.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <i class="bi bi-basket3"></i>
+                  <h4>Praktis dan Mudah</h4>
+                  <p>Dengan opsi pembelian langsung di lokasi atau pre-order, kami memastikan pelanggan tidak perlu repot dalam mencari camilan praktis.</p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -209,7 +235,7 @@
     <!-- Stats Section -->
     <section id="stats" class="stats section dark-background">
 
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/gallery/gallery-1.jpg" alt="" data-aos="fade-in">
 
 
     </section><!-- /Stats Section -->
@@ -219,8 +245,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Menu</h2>
         <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
+        <h2>NGEMIL YUK! hadir untuk menyediakan camilan berkualitas tinggi dengan harga yang terjangkau dan kemudahan akses</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -241,7 +267,6 @@
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Starters</h3>
             </div>
 
             <div class="row gy-5">
@@ -250,10 +275,9 @@
                 <a href="assets/img/menu/bolu2.png" class="glightbox"><img src="assets/img/menu/bolu2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bolu Kukus</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  $5.95
+                  Rp 2.500
                 </p>
               </div><!-- Menu Item -->
 
@@ -261,10 +285,9 @@
                 <a href="assets/img/menu/baso.png" class="glightbox"><img src="assets/img/menu/baso.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bakso Tahu</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  $14.95
+                  Rp 1.500
                 </p>
               </div><!-- Menu Item -->
 
@@ -272,46 +295,11 @@
                 <a href="assets/img/menu/pastel.png" class="glightbox"><img src="assets/img/menu/pastel.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pastel</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  $8.95
+                  Rp 2.500
                 </p>
               </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
             </div>
           </div><!-- End Starter Menu Content -->
 
