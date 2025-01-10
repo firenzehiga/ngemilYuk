@@ -28,11 +28,11 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/second.css" rel="stylesheet">
   <style>
-    /* Tombol Instagram */
+/* Tombol Instagram */
 .instagram-float {
     position: fixed;
-    bottom: 90px; /* Posisikan di atas tombol WhatsApp */
-    right: 20px; /* Geser ke kanan */
+    bottom: 80px;
+    right: 15px;
     z-index: 1000;
 }
 
@@ -42,32 +42,32 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    width: 60px;
-    height: 60px;
+    width: 45px; /* Ukuran tombol lebih kecil */
+    height: 45px;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
 }
 
 .instagram-float a:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .instagram-float .bi-instagram {
-    font-size: 30px;
+    font-size: 24px; /* Ukuran ikon lebih kecil */
     color: white;
 }
 
 .instagram-text {
     position: absolute;
-    right: 70px; /* Teks keluar ke kiri */
-    font-size: 14px;
+    right: 55px;
+    font-size: 12px; /* Teks lebih kecil */
     color: white;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
@@ -85,7 +85,7 @@
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 15px;
     z-index: 1000;
 }
 
@@ -95,32 +95,32 @@
     align-items: center;
     justify-content: center;
     background-color: #25D366;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
 }
 
 .whatsapp-float a:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .whatsapp-float .bi-whatsapp {
-    font-size: 30px;
+    font-size: 24px;
     color: white;
 }
 
 .whatsapp-text {
     position: absolute;
-    right: 70px; /* Teks keluar ke kiri */
-    font-size: 14px;
+    right: 55px;
+    font-size: 12px;
     color: white;
     background-color: #25D366;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
@@ -133,6 +133,7 @@
     visibility: visible;
     transform: translateX(0);
 }
+
 
   </style>
 
@@ -455,7 +456,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/coming.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/coming.jpg" class="img-fluid testimonial-img" alt="testi">
                   </div>
                 </div>
               </div>
