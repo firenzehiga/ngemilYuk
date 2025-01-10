@@ -28,6 +28,58 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/second.css" rel="stylesheet">
   <style>
+    .play-video-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-video-btn:hover {
+    background-color: #0056b3;
+}
+    /* Popup Video Container */
+.video-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px; /* Maksimal lebar video */
+    background: #000;
+}
+
+.popup-content video {
+    width: 100%;
+    height: auto;
+    max-height: 90vh; /* Mencegah video terlalu tinggi */
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+  </style>
+  <style>
 /* Tombol Instagram */
 .instagram-float {
     position: fixed;
@@ -197,7 +249,7 @@
             <p data-aos="fade-up" data-aos-delay="100">Solusi ngemil untuk kamu yang sibuk. Pastinya berkualitas, enak, dan murah!</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
               <!-- <a href="#book-a-table" class="btn-get-started">Booka a Table</a> -->
-              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+              <a href="assets/img/video.mp4" class="glightbox btn-get-started d-flex align-items-center"><i class="bi bi-play-circle"></i><span>&nbsp;Tonton Video</span></a>
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" style="border-radius: 5%;">
@@ -243,6 +295,10 @@
               <p>
                 Kami percaya bahwa ngemil bukan sekadar makan, tetapi momen kebahagiaan sederhana yang harus dinikmati bersama teman dan keluarga. Ayo, cicipi lezatnya camilan kami!
               </p>
+              <div class="position-relative mt-4">
+                <img src="assets/img/logo.png" class="img-fluid" alt="" width="200" height="200" style="margin-left: 25%; border-radius: 10%;">
+                <a href="assets/img/video1.mp4" class="glightbox pulsating-play-btn"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -892,6 +948,31 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+        // Tangkap tombol, popup, dan tombol close
+    const playButton = document.getElementById('play-video-btn');
+    const videoPopup = document.getElementById('video-popup');
+    const closeButton = document.getElementById('close-popup');
+
+    // Tampilkan popup saat tombol diklik
+    playButton.addEventListener('click', function() {
+        videoPopup.style.display = 'flex';
+    });
+
+    // Tutup popup saat tombol close diklik
+    closeButton.addEventListener('click', function() {
+        videoPopup.style.display = 'none';
+    });
+
+    // Tutup popup saat klik di luar konten
+    window.addEventListener('click', function(event) {
+        if (event.target === videoPopup) {
+            videoPopup.style.display = 'none';
+        }
+    });
+
+  </script>
 
 </body>
 
